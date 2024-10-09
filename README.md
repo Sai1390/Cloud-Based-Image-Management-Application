@@ -1,7 +1,3 @@
-Your **README** file looks excellent overall! I noticed a couple of small areas for improvement and a minor formatting correction. Here's a slightly refined version:
-
----
-
 # Cloud-Based-Image-Management-Application
 
 A cloud-based Image Management Application using Python (Flask) and AWS. Users can upload images to an S3 bucket, with optional encryption. The app allows listing, downloading, and decrypting images. It is hosted on an EC2 instance and uses Boto3 for AWS services and Fernet for encryption.
@@ -52,9 +48,9 @@ The application is built using:
 
 2. **Install Dependencies**:
    Install the required Python libraries:
-   ```bash
-   pip install -r requirements.txt
-   ```
+   - Flask
+  - Boto3
+  - Cryptography
 
 3. **AWS Configuration**:
    - Set up an **S3 bucket** to store images.
@@ -62,15 +58,19 @@ The application is built using:
    - Ensure your EC2 instance has the necessary **IAM roles** for accessing the S3 bucket.
 
 4. **Run the Application**:
-   Start the Flask application:
+   Start the Flask application by connecting to your EC2 instance:
+   ```bash
+   ssh -i "D:\Commvault\Commvault.pem" ec2-user@ec2-13-60-222-86.eu-north-1.compute.amazonaws.com
+   ```
+   Once connected, navigate to the project directory and run:
    ```bash
    python3 app.py
    ```
 
 5. **Access the Application**:
-   - Visit the application in your browser using the EC2 instance's public IP:
+   - The application is now running on your EC2 instance and can be accessed via the EC2 public IP:
      ```
-     http://your-ec2-public-ip:5000
+     http://ec2-13-60-222-86.eu-north-1.compute.amazonaws.com:5000
      ```
 
 ## How to Use
