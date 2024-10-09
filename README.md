@@ -47,22 +47,23 @@ The application is built using:
 
 2. **Install Dependencies**:
    Install the required Python libraries:
-   ```bash
-   pip install -r requirements.txt
+  - Flask
+  - Boto3
+  - Cryptography
    ```
 
-3. **AWS Configuration**:
+4. **AWS Configuration**:
    - Set up an **S3 bucket** to store images.
    - Launch an **EC2 instance** and configure it to allow HTTP/HTTPS traffic.
    - Ensure your EC2 instance has the necessary **IAM roles** for accessing the S3 bucket.
 
-4. **Run the Application**:
+5. **Run the Application**:
    Start the Flask application:
    ```bash
    python3 app.py
    ```
 
-5. **Access the Application**:
+6. **Access the Application**:
    - Visit the application in your browser using the EC2 instance's public IP:
      ```
      http://your-ec2-public-ip:5000
