@@ -48,7 +48,7 @@ The application is built using:
 
 2. **Install Dependencies**:
    Install the required Python libraries:
-   - Flask
+  - Flask
   - Boto3
   - Cryptography
 
