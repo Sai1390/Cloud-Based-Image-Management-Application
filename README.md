@@ -1,8 +1,13 @@
-# Cloud-Based-Image-Management-Application
-A cloud-based Image Management Application using Python (Flask) and AWS. Users can upload images to an S3 bucket, with optional encryption. The app allows listing, downloading, and decrypting images. It is hosted on an EC2 instance and uses Boto3 for AWS services and Fernet for encryption.
-Here’s a basic template for your **README** file for the image management application project. You can modify this based on your specific details.
+Your **README** file looks excellent overall! I noticed a couple of small areas for improvement and a minor formatting correction. Here's a slightly refined version:
 
 ---
+
+# Cloud-Based-Image-Management-Application
+
+A cloud-based Image Management Application using Python (Flask) and AWS. Users can upload images to an S3 bucket, with optional encryption. The app allows listing, downloading, and decrypting images. It is hosted on an EC2 instance and uses Boto3 for AWS services and Fernet for encryption.
+
+---
+
 ## Overview
 This project is a cloud-based Image Management Application built using **Python** and **Amazon Web Services (AWS)**. The application allows users to:
 - Upload images to an **S3 bucket**.
@@ -47,23 +52,22 @@ The application is built using:
 
 2. **Install Dependencies**:
    Install the required Python libraries:
-  - Flask
-  - Boto3
-  - Cryptography
+   ```bash
+   pip install -r requirements.txt
    ```
 
-4. **AWS Configuration**:
+3. **AWS Configuration**:
    - Set up an **S3 bucket** to store images.
    - Launch an **EC2 instance** and configure it to allow HTTP/HTTPS traffic.
    - Ensure your EC2 instance has the necessary **IAM roles** for accessing the S3 bucket.
 
-5. **Run the Application**:
+4. **Run the Application**:
    Start the Flask application:
    ```bash
    python3 app.py
    ```
 
-6. **Access the Application**:
+5. **Access the Application**:
    - Visit the application in your browser using the EC2 instance's public IP:
      ```
      http://your-ec2-public-ip:5000
